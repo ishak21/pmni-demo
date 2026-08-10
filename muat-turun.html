@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muat Turun Dokumen — PMNI</title>
+<meta name="description" content="Muat turun borang pendaftaran, profil PMNI, pelan pembangunan, takwim dan dokumen rasmi Pondok Moden Nurul Isyraq.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="muat-turun">
+
+<div id="nav-slot"></div>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Utama</a> / Muat Turun</div>
+  <h1>Muat Turun Dokumen</h1>
+  <p>Baca terus di halaman ini, atau muat turun untuk simpanan</p>
+</section>
+
+<!-- PEMAPAR AKTIF -->
+<section class="section">
+  <div class="container" style="max-width:940px">
+    <div class="pdf-viewer-wrap">
+      <div class="pdf-toolbar">
+        <span><i class="fa-solid fa-file-pdf"></i> <span id="pdfNama">Profil PMNI.pdf</span></span>
+        <div class="pdf-actions">
+          <a id="pdfFull" href="dokumen/profil-pmni.pdf" target="_blank" class="pdf-btn">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Skrin Penuh
+          </a>
+          <a id="pdfDl" href="dokumen/profil-pmni.pdf" download class="pdf-btn utama">
+            <i class="fa-solid fa-download"></i> Muat Turun
+          </a>
+        </div>
+      </div>
+      <div class="pdf-frame">
+        <iframe id="pdfFrame" src="dokumen/profil-pmni.pdf" title="Pemapar dokumen PMNI"></iframe>
+        <div class="pdf-fallback">
+          <i class="fa-solid fa-file-pdf"></i>
+          <p><strong>Fail belum dimuat naik</strong></p>
+          <p style="font-size:.85rem">Letakkan fail PDF dalam folder <code>/dokumen/</code>.<br>
+          Dalam WordPress: plugin <strong>PDF Embedder</strong> + <strong>Download Monitor</strong>.</p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--kelabu);font-size:.85rem;margin-top:16px">
+      Klik mana-mana dokumen di bawah untuk membacanya di pemapar ini.
+    </p>
+  </div>
+</section>
+
+<!-- SENARAI DOKUMEN -->
+<section class="section section-gray">
+  <div class="container" style="max-width:940px">
+
+    <h2 class="section-title">Maklumat Institusi</h2>
+    <div class="section-line"></div>
+    <div class="dok-senarai">
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Profil PMNI</h4>
+          <span>Latar belakang, visi misi, manhaj &amp; silibus pengajian</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/profil-pmni.pdf" data-nama="Profil PMNI.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/profil-pmni.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Pelan Pembangunan PMNI</h4>
+          <span>Konsep bangunan, wakaf milik umat, garis masa pembinaan</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/pelan-pmni.pdf" data-nama="Pelan Pembangunan PMNI.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/pelan-pmni.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top:56px">Pendaftaran</h2>
+    <div class="section-line"></div>
+    <div class="dok-senarai">
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Borang Pendaftaran Pelajar Baharu</h4>
+          <span>Borang fizikal untuk dicetak dan diisi</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/borang-pendaftaran.pdf" data-nama="Borang Pendaftaran.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/borang-pendaftaran.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Senarai Semak Dokumen Kemasukan</h4>
+          <span>Dokumen yang perlu disediakan sebelum pendaftaran</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/senarai-semak.pdf" data-nama="Senarai Semak.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/senarai-semak.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Senarai Barang Keperluan Asrama</h4>
+          <span>Panduan barang yang perlu dibawa pelajar</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/keperluan-asrama.pdf" data-nama="Keperluan Asrama.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/keperluan-asrama.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top:56px">Maklumat Pelajar</h2>
+    <div class="section-line"></div>
+    <div class="dok-senarai">
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Takwim Persekolahan 2027</h4>
+          <span>Jadual cuti, peperiksaan dan acara sepanjang tahun</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/takwim-2027.pdf" data-nama="Takwim 2027.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/takwim-2027.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+      <div class="dok-item">
+        <div class="dok-ikon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="dok-info">
+          <h4>Peraturan &amp; Tatatertib PMNI</h4>
+          <span>Panduan disiplin dan peraturan asrama</span>
+        </div>
+        <div class="dok-btns">
+          <button class="dok-baca" data-file="dokumen/peraturan.pdf" data-nama="Peraturan PMNI.pdf">
+            <i class="fa-regular fa-eye"></i> Baca
+          </button>
+          <a class="dok-dl" href="dokumen/peraturan.pdf" download><i class="fa-solid fa-download"></i> Muat Turun</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-nota-box">
+      <h4><i class="fa-solid fa-circle-info"></i> Nota Pelaksanaan WordPress</h4>
+      <p>Dalam WordPress, senarai ini dijana secara automatik. Admin muat naik PDF dari dashboard, dan dokumen terus muncul di sini tanpa sentuh kod.</p>
+      <ul>
+        <li><strong>PDF Embedder</strong> — pemapar PDF dalam halaman</li>
+        <li><strong>Download Monitor</strong> — pengurusan fail, kategori, statistik muat turun</li>
+        <li><strong>Members / Ultimate Member</strong> — tetapkan dokumen mana perlu log masuk</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+<script src="assets/app.js"></script>
+<script src="assets/demo-banner.js"></script>
+<script>
+// Tukar dokumen dalam pemapar
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.dok-baca').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const file = btn.dataset.file, nama = btn.dataset.nama;
+      document.getElementById('pdfFrame').src = file;
+      document.getElementById('pdfNama').textContent = nama;
+      document.getElementById('pdfFull').href = file;
+      document.getElementById('pdfDl').href = file;
+      document.querySelector('.pdf-viewer-wrap').scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  });
+});
+</script>
+</body>
+</html>
