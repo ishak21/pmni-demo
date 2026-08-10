@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Pendaftaran — PMNI</title>
+<meta name="description" content="Borang permohonan kemasukan pelajar baharu sesi 2027 Pondok Moden Nurul Isyraq.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="pendaftaran">
+
+<div id="nav-slot"></div>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Utama</a> / E-Pendaftaran</div>
+  <h1>E-Pendaftaran Pelajar Baharu</h1>
+  <p>Sesi 2027 — Permohonan Kemasukan PMNI</p>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:720px">
+    <div style="background:var(--kelabu-muda);border-radius:var(--radius-lg);padding:48px;border:1px solid var(--garis)">
+
+      <div style="text-align:center;margin-bottom:32px">
+        <div style="font-family:var(--font-arab);font-size:1.6rem;color:var(--hijau);margin-bottom:8px">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+        <h2 style="font-size:1.3rem;font-weight:900;text-transform:uppercase;color:var(--kelabu-tua)">Borang Permohonan Kemasukan</h2>
+        <p style="font-size:.88rem;color:var(--kelabu)">Sila isi maklumat di bawah dengan lengkap dan betul</p>
+      </div>
+
+      <!--
+        Di WordPress: Pasang WPForms Pro
+        Buat form "E-Pendaftaran PMNI" dengan field:
+
+        SECTION 1: MAKLUMAT PEMOHON
+        - Nama Penuh Pelajar (required)
+        - No. KP / MyKid (required)
+        - Tarikh Lahir (date picker)
+        - Umur pada 2027 (auto-calculate atau dropdown: 11 / 12)
+        - Bangsa (dropdown)
+        - Warganegara (dropdown: Malaysia / Lain-lain)
+
+        SECTION 2: MAKLUMAT IBU BAPA / PENJAGA
+        - Nama Bapa / Penjaga (required)
+        - No. Telefon Bapa (required)
+        - Nama Ibu
+        - No. Telefon Ibu
+        - Alamat Rumah (textarea)
+
+        SECTION 3: LATAR BELAKANG PENDIDIKAN
+        - Nama Sekolah Semasa
+        - Tahun / Darjah
+        - Boleh Membaca Al-Quran? (Ya/Tidak)
+        - Hafazan Semasa (jika ada)
+
+        SECTION 4: KESIHATAN
+        - Masalah Kesihatan (Ya/Tidak, detail jika Ya)
+
+        SECTION 5: PERSETUJUAN
+        - Checkbox: Saya bersetuju dengan syarat & terma
+        - Submit button
+
+        Upload dokumen: Salinan KP, Sijil Lahir, Sijil Kesihatan
+        Shortcode: [wpforms id="456"]
+      -->
+
+      <form onsubmit="event.preventDefault();alert('Terima kasih! Permohonan anda telah dihantar. Pihak PMNI akan menghubungi anda melalui WhatsApp untuk proses seterusnya.');">
+
+        <!-- Section 1 -->
+        <h3 style="color:var(--hijau);font-size:.88rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--hijau)">Maklumat Pelajar</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px">
+          <input type="text" placeholder="Nama Penuh Pelajar *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem">
+          <input type="text" placeholder="No. KP / MyKid *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem">
+          <input type="date" placeholder="Tarikh Lahir" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;color:var(--kelabu)">
+          <select style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;color:var(--kelabu)"><option value="">Umur pada 2027</option><option>11 tahun</option><option>12 tahun</option></select>
+        </div>
+
+        <!-- Section 2 -->
+        <h3 style="color:var(--hijau);font-size:.88rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--hijau)">Maklumat Ibu Bapa / Penjaga</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px">
+          <input type="text" placeholder="Nama Bapa / Penjaga *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;grid-column:1/-1">
+          <input type="tel" placeholder="No. Telefon Bapa *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem">
+          <input type="tel" placeholder="No. Telefon Ibu" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem">
+          <textarea placeholder="Alamat Rumah Penuh *" required rows="3" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;resize:vertical;grid-column:1/-1"></textarea>
+        </div>
+
+        <!-- Section 3 -->
+        <h3 style="color:var(--hijau);font-size:.88rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--hijau)">Latar Belakang Pendidikan</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px">
+          <input type="text" placeholder="Nama Sekolah Semasa" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem">
+          <select style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;color:var(--kelabu)"><option value="">Tahun / Darjah</option><option>Darjah 4</option><option>Darjah 5</option><option>Darjah 6</option></select>
+          <select style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;color:var(--kelabu)"><option value="">Boleh Baca Al-Quran?</option><option>Ya</option><option>Tidak</option></select>
+          <input type="text" placeholder="Hafazan Semasa (jika ada)" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem">
+        </div>
+
+        <!-- Section 4 -->
+        <h3 style="color:var(--hijau);font-size:.88rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--hijau)">Kesihatan</h3>
+        <div style="margin-bottom:24px">
+          <textarea placeholder="Nyatakan sebarang masalah kesihatan (jika tiada, tulis 'Tiada')" rows="2" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.86rem;resize:vertical;width:100%"></textarea>
+        </div>
+
+        <!-- Agreement -->
+        <label style="display:flex;align-items:flex-start;gap:10px;font-size:.82rem;color:var(--kelabu);margin-bottom:24px;cursor:pointer">
+          <input type="checkbox" required style="margin-top:3px">
+          <span>Saya bersetuju bahawa maklumat yang diberikan adalah benar dan bersetuju dengan syarat &amp; terma yang ditetapkan oleh PMNI.</span>
+        </label>
+
+        <button type="submit" style="width:100%;background:var(--hijau);color:var(--putih);font-weight:800;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;padding:16px;border:none;border-radius:var(--radius);cursor:pointer;font-family:var(--font-utama);transition:all var(--tr)">Hantar Permohonan</button>
+      </form>
+
+      <p style="text-align:center;font-size:.78rem;color:var(--kelabu);margin-top:20px">Sebarang pertanyaan? Hubungi kami di <a href="tel:+601154331448" style="color:var(--hijau);font-weight:700">011-5433 1448</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<div id="footer-slot"></div>
+<script src="assets/app.js"></script>
+<script src="assets/demo-banner.js"></script>
+</body>
+</html>
