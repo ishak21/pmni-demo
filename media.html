@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Hubungi Kami — PMNI</title>
+<meta name="description" content="Aktiviti terkini, galeri, lokasi premis dan maklumat perhubungan PMNI Kuala Selangor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="media">
+
+<div id="nav-slot"></div>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Utama</a> / Media &amp; Hubungi Kami</div>
+  <h1>Media &amp; Hubungi Kami</h1>
+  <p>Aktiviti terkini, pengambilan pelajar, lokasi dan hubungan</p>
+</section>
+
+<!-- AKTIVITI & HEBAHAN — AUTO SOCIAL MEDIA FEED -->
+<section class="section" id="aktiviti">
+  <div class="container">
+    <h2 class="section-title">Aktiviti &amp; Hebahan</h2>
+    <div class="section-line"></div>
+    <p style="text-align:center;font-size:.92rem;color:var(--kelabu);margin-bottom:32px">Kemas kini automatik dari media sosial rasmi PMNI</p>
+
+    <!-- SOCIAL MEDIA WALL — Smash Balloon Integration -->
+    <!--
+      Di WordPress, pasang plugin:
+      1. Smash Balloon Custom Facebook Feed Pro
+      2. Smash Balloon Instagram Feed Pro
+      3. Smash Balloon YouTube Feed Pro
+
+      Gabungkan menggunakan Smash Balloon "Social Wall" plugin:
+      [custom-facebook-feed feed=1]
+      [instagram-feed feed=1]
+      [youtube-feed feed=1]
+
+      Atau guna Social Wall shortcode:
+      [social-wall feeds="facebook,instagram,youtube"]
+    -->
+
+    <!-- Tab navigation untuk social media feeds -->
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:32px">
+      <button class="sosmed-tab active" data-feed="fb" style="padding:10px 24px;border-radius:30px;border:2px solid #1877f2;background:#1877f2;color:var(--putih);font-weight:700;font-size:.8rem;cursor:pointer"><i class="fa-brands fa-facebook"></i> Facebook</button>
+      <button class="sosmed-tab" data-feed="ig" style="padding:10px 24px;border-radius:30px;border:2px solid #e6683c;background:transparent;color:#e6683c;font-weight:700;font-size:.8rem;cursor:pointer"><i class="fa-brands fa-instagram"></i> Instagram</button>
+      <button class="sosmed-tab" data-feed="yt" style="padding:10px 24px;border-radius:30px;border:2px solid #ff0000;background:transparent;color:#ff0000;font-weight:700;font-size:.8rem;cursor:pointer"><i class="fa-brands fa-youtube"></i> YouTube</button>
+      <button class="sosmed-tab" data-feed="tt" style="padding:10px 24px;border-radius:30px;border:2px solid #333;background:transparent;color:#333;font-weight:700;font-size:.8rem;cursor:pointer"><i class="fa-brands fa-tiktok"></i> TikTok</button>
+      <button class="sosmed-tab" data-feed="tg" style="padding:10px 24px;border-radius:30px;border:2px solid #229ed9;background:transparent;color:#229ed9;font-weight:700;font-size:.8rem;cursor:pointer"><i class="fa-brands fa-telegram"></i> Telegram</button>
+    </div>
+
+    <!-- Feed containers -->
+    <div id="feed-fb" class="feed-panel" style="max-width:var(--max-w);margin:0 auto">
+      <!-- Facebook embed -->
+      <div style="max-width:1100px;margin:0 auto;background:var(--kelabu-muda);border-radius:var(--radius-lg);padding:48px;text-align:center;border:2px dashed #ddd">
+        <i class="fa-brands fa-facebook" style="font-size:3rem;color:#1877f2;margin-bottom:16px;display:block"></i>
+        <p style="font-size:.88rem;color:var(--kelabu)">Feed Facebook rasmi PMNI dipaparkan secara automatik di sini.<br>Guna plugin <strong>Smash Balloon Custom Facebook Feed</strong> dalam WordPress.</p>
+        <!-- Alternative: Facebook Page Plugin Embed -->
+        <div style="margin-top:20px">
+          <div class="fb-page" data-href="https://www.facebook.com/share/1EsJNTfjje/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social media links -->
+    <div class="sosmed-row" style="margin-top:32px">
+      <a href="https://www.facebook.com/share/1EsJNTfjje/" target="_blank" rel="noopener" class="sosmed-btn fb"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn ig"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://youtube.com/@pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="https://www.tiktok.com/@pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn tt"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+      <a href="https://t.me/alisyraqtv" target="_blank" rel="noopener" class="sosmed-btn tg"><i class="fa-brands fa-telegram"></i> Telegram</a>
+      <a href="https://www.threads.com/@pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn" style="background:#000"><i class="fa-brands fa-threads"></i> Threads</a>
+      <a href="https://x.com/pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn" style="background:#000"><i class="fa-brands fa-x-twitter"></i> X</a>
+      <a href="https://whatsapp.com/channel/0029VajaK8T9RZAOM6tCRd0i" target="_blank" rel="noopener" class="sosmed-btn" style="background:#25d366"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- PENGAMBILAN PELAJAR 2027 -->
+<section class="section section-gray" id="pengambilan">
+  <div class="container" style="max-width:860px">
+    <h2 class="section-title">Pengambilan Pelajar Baharu 2027</h2>
+    <div class="section-line"></div>
+    <div style="background:linear-gradient(135deg,var(--hijau-gelap),var(--hijau));border-radius:var(--radius-lg);padding:48px;color:var(--putih);text-align:center">
+      <div style="font-family:var(--font-arab);font-size:1.6rem;color:var(--emas);margin-bottom:16px">نور العشراق</div>
+      <h3 style="font-size:1.5rem;font-weight:900;text-transform:uppercase;margin-bottom:8px;color:var(--emas-muda)">Permohonan Kemasukan Pelajar Baharu</h3>
+      <p style="font-size:1rem;margin-bottom:24px;font-weight:700">Sesi 2027 — Daftar Sekarang</p>
+      <ul style="list-style:none;text-align:left;max-width:400px;margin:0 auto 28px;font-size:.88rem;line-height:2.2">
+        <li><i class="fa-solid fa-check" style="color:var(--emas-muda);margin-right:8px"></i> Lelaki sahaja</li>
+        <li><i class="fa-solid fa-check" style="color:var(--emas-muda);margin-right:8px"></i> Warganegara Malaysia</li>
+        <li><i class="fa-solid fa-check" style="color:var(--emas-muda);margin-right:8px"></i> Berumur 11 & 12 tahun pada 2027</li>
+        <li><i class="fa-solid fa-check" style="color:var(--emas-muda);margin-right:8px"></i> Boleh membaca Al-Quran</li>
+        <li><i class="fa-solid fa-check" style="color:var(--emas-muda);margin-right:8px"></i> Sihat tubuh badan</li>
+      </ul>
+      <a href="pendaftaran.html" class="btn-emas">Daftar Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOKASI & HUBUNGI -->
+<section class="section" id="lokasi">
+  <div class="container" style="max-width:860px">
+    <h2 class="section-title">Lokasi &amp; Hubungi Kami</h2>
+    <div class="section-line"></div>
+
+    <!-- Google Maps -->
+    <div style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--garis);margin-bottom:32px">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d101.3!3d3.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMjEnMDAuMCJOIDEwMcKwMTgnMDAuMCJF!5e0!3m2!1sms!2smy!4v1" width="100%" height="350" style="border:0" allowfullscreen loading="lazy" title="Lokasi PMNI"></iframe>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+      <!-- Maklumat Hubungi -->
+      <div>
+        <h3 style="font-weight:800;color:var(--hijau);margin-bottom:16px">Maklumat Perhubungan</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:16px">
+          <li style="display:flex;gap:12px;font-size:.88rem;line-height:1.6"><i class="fa-solid fa-location-dot" style="color:var(--hijau);margin-top:4px"></i><span>Jalan Rawang, Kampung Kuantan, 45600 Kuala Selangor, Selangor</span></li>
+          <li style="display:flex;gap:12px;font-size:.88rem"><i class="fa-solid fa-phone" style="color:var(--hijau);margin-top:4px"></i><span>011-5433 1448<br>011-1294 9535<br>017-724 9535</span></li>
+          <li style="display:flex;gap:12px;font-size:.88rem"><i class="fa-regular fa-envelope" style="color:var(--hijau);margin-top:4px"></i><a href="mailto:info@pmni.edu.my">info@pmni.edu.my</a></li>
+        </ul>
+      </div>
+
+      <!-- BORANG PERTANYAAN -->
+      <!--
+        Di WordPress: Pasang WPForms
+        Buat form "Pertanyaan PMNI" dengan field:
+        - Nama Penuh (required)
+        - Email (required)
+        - No. Telefon/WhatsApp (required)
+        - Subjek (dropdown: Pertanyaan Am, Pendaftaran Pelajar, Infaq, Kerjasama)
+        - Mesej (textarea)
+        - Submit
+
+        Shortcode: [wpforms id="123"]
+      -->
+      <div id="hubungi">
+        <h3 style="font-weight:800;color:var(--hijau);margin-bottom:16px">Borang Pertanyaan</h3>
+        <form style="display:flex;flex-direction:column;gap:14px" onsubmit="event.preventDefault();alert('Terima kasih! Borang anda telah dihantar. Kami akan menghubungi anda melalui WhatsApp.');">
+          <input type="text" placeholder="Nama Penuh *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.88rem">
+          <input type="email" placeholder="Email *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.88rem">
+          <input type="tel" placeholder="No. Telefon / WhatsApp *" required style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.88rem">
+          <select style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.88rem;color:var(--kelabu)">
+            <option value="">— Pilih Subjek —</option>
+            <option>Pertanyaan Am</option>
+            <option>Pendaftaran Pelajar</option>
+            <option>Infaq &amp; Sumbangan</option>
+            <option>Kerjasama</option>
+          </select>
+          <textarea placeholder="Mesej anda..." rows="4" style="padding:12px 16px;border:1px solid var(--garis);border-radius:var(--radius);font-family:var(--font-utama);font-size:.88rem;resize:vertical"></textarea>
+          <button type="submit" class="btn-hijau" style="border:none;cursor:pointer;text-align:center">Hantar Pertanyaan</button>
+        </form>
+        <div style="margin-top:16px;text-align:center">
+          <a href="https://wa.me/601154331448?text=Assalamualaikum%2C%20saya%20ingin%20bertanya%20mengenai%20PMNI." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25d366;color:var(--putih);font-weight:700;font-size:.88rem;padding:12px 28px;border-radius:30px;transition:all var(--tr)"><i class="fa-brands fa-whatsapp"></i> WhatsApp Pantas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<div id="footer-slot"></div>
+<script src="assets/app.js"></script>
+<script src="assets/demo-banner.js"></script>
+</body>
+</html>
