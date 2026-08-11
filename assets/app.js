@@ -230,3 +230,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+/* ---------- SLIDER POSTER ---------- */
+(function () {
+  const track = document.getElementById('psTrack');
+  if (!track) return;
+  const slides = track.querySelectorAll('.ps-slide');
+  const dotsWrap = document.getElementById('psDots');
+  const jum = slides.length;
+  let kini = 0;
+  let auto;
+
+  slides.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.setAttribute('aria-label', 'Poster ' + (i + 1));
+    b.onclick = () => { pergi(i); mulaAuto(); };
+    dotsWrap.appendChild(b);
+  });
+  const dots = dotsWrap.querySelectorAll('button');
+
+  function pergi(i) {
+    kini = (i + jum) % jum;
+    track.style.transform = `translateX(-${kini * 100}%)`;
+    dots.forEach((d, x) => d.classList.toggle('aktif', x === kini));
+  }
+  function mulaAuto() {
+    clearInterval(auto);
+    auto = setInterval(() => pergi(kini + 1), 6000);
+  }
+
+  document.getElementById('psPrev').onclick = () => { pergi(kini - 1); mulaAuto(); };
+  document.getElementById('psNext').onclick = () => { pergi(kini + 1); mulaAuto(); };
+
+  // Sokongan leret (swipe) pada telefon
+  let x0 = null;
+  track.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const beza = e.changedTouches[0].clientX - x0;
+    if (Math.abs(beza) > 45) { pergi(beza < 0 ? kini + 1 : kini - 1); mulaAuto(); }
+    x0 = null;
+  }, { passive: true });
+
+  pergi(0);
+  mulaAuto();
+})();
+
+/* ---------- TICKER: gandakan kandungan supaya gelung mulus ---------- */
+(function () {
+  const run = document.getElementById('tickerRun');
+  if (!run) return;
+  run.innerHTML += run.innerHTML;
+})();
