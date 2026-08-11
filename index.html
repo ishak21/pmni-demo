@@ -106,49 +106,110 @@
   </div>
 </section>
 
-<!-- AKTIVITI TERKINI — FACEBOOK FEED INTEGRATED -->
+<!-- BERITA & AKTIVITI -->
 <section class="berita-seksyen">
-  </div>
-
-  <h2 class="seksyen-tajuk" style="margin-top:24px">Berita &amp; Aktiviti Terkini</h2>
+  <h2 class="seksyen-tajuk">Berita &amp; Aktiviti Terkini</h2>
   <div class="seksyen-garis"></div>
 
   <!--
-    FACEBOOK FEED INTEGRATION:
-    Di WordPress, pasang plugin "Smash Balloon Custom Facebook Feed Pro"
-    dan guna shortcode [custom-facebook-feed] di sini.
-
-    Manual embed alternatif (tanpa plugin):
-    <div class="fb-page" data-href="https://www.facebook.com/share/1EsJNTfjje/"
-         data-tabs="timeline" data-width="1100" data-height="600"
-         data-small-header="false" data-adapt-container-width="true"
-         data-hide-cover="false" data-show-facepile="true">
-    </div>
+    DI WORDPRESS:
+    Bahagian ini menggunakan sistem Post WordPress biasa (bukan Facebook feed).
+    Kategori: Berita, Aktiviti, Pencapaian, Pembangunan, Hebahan.
+    Admin tambah berita dari dashboard — terus muncul di sini secara automatik.
   -->
 
-  <!-- Static preview cards (akan diganti dengan auto feed di WordPress) -->
-  <div class="fb-feed-container reveal">
-    <div class="fb-post-card featured">
-      <img class="fb-img" src="imej/galeri/aktiviti-1.jpg" alt="Program Tarbiah PMNI" loading="lazy" onerror="this.style.display='none'">
-      <div>
-        <div class="fb-header"><div class="fb-avatar"><i class="fa-brands fa-facebook-f"></i></div><div><div class="fb-name">PMNI - Pondok Moden Nurul Isyraq</div><div class="fb-date">15 Julai 2026</div></div></div>
-        <div class="fb-text">Program Tarbiah &amp; Kembara Pelajar 2026 Berlangsung Penuh Ukhwah. Para pelajar PMNI telah mengikuti program kembara ilmiah yang penuh bermakna...</div>
-        <div class="fb-engagement"><span><i class="fa-regular fa-thumbs-up"></i> 128</span><span><i class="fa-regular fa-comment"></i> 24</span><span><i class="fa-solid fa-share"></i> 45</span></div>
+  <div class="berita-grid">
+    <article class="berita-kad reveal">
+      <a class="bk-imej" href="#" aria-label="Majlis Khatam Al-Quran Sesi 2025/2026 Berlangsung Penuh Keberkatan">
+        <img src="imej/galeri/b1.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="bk-kategori">Berita</span>
+      </a>
+      <div class="bk-isi">
+        <h3 class="bk-tajuk"><a href="#">Majlis Khatam Al-Quran Sesi 2025/2026 Berlangsung Penuh Keberkatan</a></h3>
+        <div class="bk-meta">
+          <span><i class="fa-regular fa-user"></i> Admin</span>
+          <span><i class="fa-regular fa-calendar"></i> 30/07/2026</span>
+          <span><i class="fa-regular fa-clock"></i> 10:19 PG</span>
+        </div>
       </div>
-    </div>
-    <div class="fb-post-card">
-      <div class="fb-header"><div class="fb-avatar"><i class="fa-brands fa-facebook-f"></i></div><div><div class="fb-name">PMNI - Pondok Moden Nurul Isyraq</div><div class="fb-date">30 Julai 2026</div></div></div>
-      <div class="fb-text">Majlis Khatam Al-Quran Sesi 2025/2026 Berlangsung Penuh Keberkatan. Alhamdulillah, seramai 15 orang pelajar telah berjaya khatam...</div>
-      <div class="fb-engagement"><span><i class="fa-regular fa-thumbs-up"></i> 256</span><span><i class="fa-regular fa-comment"></i> 38</span></div>
-    </div>
-    <div class="fb-post-card">
-      <div class="fb-header"><div class="fb-avatar"><i class="fa-brands fa-facebook-f"></i></div><div><div class="fb-name">PMNI - Pondok Moden Nurul Isyraq</div><div class="fb-date">10 Ogos 2026</div></div></div>
-      <div class="fb-text">Ini santri berumur 11 tahun.. baru masuk Dirasah Khasah Januari 2026, tapi hari ini sudah khatam hafazan Matan Jurumiyah (23 Bab ✅). Al Quran sudah 8 juzu'...</div>
-      <div class="fb-engagement"><span><i class="fa-regular fa-thumbs-up"></i> 512</span><span><i class="fa-regular fa-comment"></i> 67</span><span><i class="fa-solid fa-share"></i> 120</span></div>
-    </div>
+    </article>
+    <article class="berita-kad reveal">
+      <a class="bk-imej" href="#" aria-label="Santri 11 Tahun Khatam Hafazan Matan Jurumiyah 23 Bab">
+        <img src="imej/galeri/b2.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="bk-kategori">Pencapaian</span>
+      </a>
+      <div class="bk-isi">
+        <h3 class="bk-tajuk"><a href="#">Santri 11 Tahun Khatam Hafazan Matan Jurumiyah 23 Bab</a></h3>
+        <div class="bk-meta">
+          <span><i class="fa-regular fa-user"></i> Admin</span>
+          <span><i class="fa-regular fa-calendar"></i> 19/07/2026</span>
+          <span><i class="fa-regular fa-clock"></i> 11:27 PG</span>
+        </div>
+      </div>
+    </article>
+    <article class="berita-kad reveal">
+      <a class="bk-imej" href="#" aria-label="Program Tarbiah &amp; Kembara Pelajar 2026 Penuh Ukhwah">
+        <img src="imej/galeri/b3.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="bk-kategori">Aktiviti</span>
+      </a>
+      <div class="bk-isi">
+        <h3 class="bk-tajuk"><a href="#">Program Tarbiah &amp; Kembara Pelajar 2026 Penuh Ukhwah</a></h3>
+        <div class="bk-meta">
+          <span><i class="fa-regular fa-user"></i> Admin</span>
+          <span><i class="fa-regular fa-calendar"></i> 15/07/2026</span>
+          <span><i class="fa-regular fa-clock"></i> 1:46 PTG</span>
+        </div>
+      </div>
+    </article>
+    <article class="berita-kad reveal">
+      <a class="bk-imej" href="#" aria-label="Sesi Usrah Bersama Syeikh Rohimuddin Nawawi Al-Bantani">
+        <img src="imej/galeri/b4.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="bk-kategori">Berita</span>
+      </a>
+      <div class="bk-isi">
+        <h3 class="bk-tajuk"><a href="#">Sesi Usrah Bersama Syeikh Rohimuddin Nawawi Al-Bantani</a></h3>
+        <div class="bk-meta">
+          <span><i class="fa-regular fa-user"></i> Admin</span>
+          <span><i class="fa-regular fa-calendar"></i> 09/07/2026</span>
+          <span><i class="fa-regular fa-clock"></i> 8:47 PG</span>
+        </div>
+      </div>
+    </article>
+    <article class="berita-kad reveal">
+      <a class="bk-imej" href="#" aria-label="Perancangan Pembinaan Tapak Kekal PMNI Diteruskan">
+        <img src="imej/galeri/b5.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="bk-kategori">Pembangunan</span>
+      </a>
+      <div class="bk-isi">
+        <h3 class="bk-tajuk"><a href="#">Perancangan Pembinaan Tapak Kekal PMNI Diteruskan</a></h3>
+        <div class="bk-meta">
+          <span><i class="fa-regular fa-user"></i> Admin</span>
+          <span><i class="fa-regular fa-calendar"></i> 30/06/2026</span>
+          <span><i class="fa-regular fa-clock"></i> 8:15 PG</span>
+        </div>
+      </div>
+    </article>
+    <article class="berita-kad reveal">
+      <a class="bk-imej" href="#" aria-label="Pengambilan Pelajar Baharu Sesi 2027 Kini Dibuka">
+        <img src="imej/galeri/b6.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <span class="bk-kategori">Hebahan</span>
+      </a>
+      <div class="bk-isi">
+        <h3 class="bk-tajuk"><a href="#">Pengambilan Pelajar Baharu Sesi 2027 Kini Dibuka</a></h3>
+        <div class="bk-meta">
+          <span><i class="fa-regular fa-user"></i> Admin</span>
+          <span><i class="fa-regular fa-calendar"></i> 08/06/2026</span>
+          <span><i class="fa-regular fa-clock"></i> 8:32 PG</span>
+        </div>
+      </div>
+    </article>
   </div>
 
-  <div class="sosmed-row" style="margin-top:32px">
+  <div style="text-align:center;margin-top:36px">
+    <a href="#" class="btn-primary">Lihat Semua Berita</a>
+  </div>
+
+  <div class="sosmed-row" style="margin-top:40px">
     <a href="https://www.facebook.com/share/1EsJNTfjje/" target="_blank" rel="noopener" class="sosmed-btn fb"><i class="fa-brands fa-facebook"></i> Facebook</a>
     <a href="https://www.instagram.com/pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn ig"><i class="fa-brands fa-instagram"></i> Instagram</a>
     <a href="https://youtube.com/@pmnalisyraq" target="_blank" rel="noopener" class="sosmed-btn yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
