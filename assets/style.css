@@ -483,3 +483,23 @@ footer{background:var(--hitam);color:rgba(255,255,255,.7);padding:56px 24px 0}
   .ps-prev{left:8px}.ps-next{right:8px}
   .tajuk-hebahan{padding:26px 18px 24px}
 }
+
+/* ============================================================
+   GRID BERITA (gaya ADI — sistem post WordPress)
+   ============================================================ */
+.berita-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px;max-width:var(--max-w);margin:0 auto}
+.berita-kad{background:var(--putih);border:1px solid var(--garis);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform var(--tr),box-shadow var(--tr)}
+.berita-kad:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.bk-imej{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,var(--hijau-gelap),var(--hijau));line-height:0}
+.bk-imej::after{content:'\f5da';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.16);font-size:3.2rem;z-index:0}
+.bk-imej img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.berita-kad:hover .bk-imej img{transform:scale(1.06)}
+.bk-kategori{position:absolute;z-index:2;left:14px;bottom:14px;background:var(--emas);color:var(--hijau-gelap);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 13px;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.bk-isi{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.bk-tajuk{font-size:1.02rem;font-weight:700;line-height:1.45;margin-bottom:14px;flex:1}
+.bk-tajuk a{color:var(--hijau-gelap);transition:color var(--tr)}
+.bk-tajuk a:hover{color:var(--emas)}
+.bk-meta{display:flex;flex-wrap:wrap;gap:14px;padding-top:13px;border-top:1px solid var(--garis);font-size:.74rem;color:var(--kelabu)}
+.bk-meta span{display:flex;align-items:center;gap:5px}
+.bk-meta i{color:var(--emas);font-size:.72rem}
+@media(max-width:600px){.berita-grid{grid-template-columns:1fr;gap:20px}}
