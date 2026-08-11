@@ -443,3 +443,43 @@ footer{background:var(--hitam);color:rgba(255,255,255,.7);padding:56px 24px 0}
   .pdf-frame{height:380px}
   .pdf-toolbar{flex-direction:column;align-items:flex-start}
 }
+
+/* ============================================================
+   SLIDER POSTER + TAJUK HEBAHAN + TICKER (susunan gaya ADI)
+   ============================================================ */
+.poster-slider{position:relative;background:var(--hijau-gelap);padding:32px 0 24px;overflow:hidden}
+.ps-latar{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 40%,rgba(45,138,82,.35),transparent 70%),linear-gradient(160deg,#0d3a22,#0a2c19);filter:blur(0)}
+.ps-latar::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-opacity='.09'%3E%3Cpath d='M35 0 L70 35 L35 70 L0 35 Z'/%3E%3Ccircle cx='35' cy='35' r='9'/%3E%3C/g%3E%3C/svg%3E")}
+.ps-viewport{position:relative;z-index:2;max-width:520px;margin:0 auto;overflow:hidden;border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.ps-track{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.ps-slide{min-width:100%;line-height:0}
+.ps-slide img{width:100%;height:auto;display:block}
+.ps-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.35);color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;transition:background var(--tr),border-color var(--tr);display:flex;align-items:center;justify-content:center}
+.ps-nav:hover{background:rgba(0,0,0,.6);border-color:var(--emas)}
+.ps-nav:focus-visible{outline:2px solid var(--emas);outline-offset:3px}
+.ps-prev{left:max(16px,calc(50% - 330px))}
+.ps-next{right:max(16px,calc(50% - 330px))}
+.ps-dots{position:relative;z-index:3;display:flex;gap:9px;justify-content:center;margin-top:18px}
+.ps-dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(255,255,255,.35);cursor:pointer;padding:0;transition:background var(--tr),width var(--tr)}
+.ps-dots button.aktif{background:var(--emas);width:26px;border-radius:5px}
+
+.tajuk-hebahan{background:var(--putih);text-align:center;padding:38px 24px 34px}
+.tajuk-hebahan h2{font-size:clamp(1.15rem,2.8vw,1.85rem);font-weight:900;color:var(--hijau-gelap);line-height:1.4;text-transform:uppercase;letter-spacing:.01em;margin-bottom:20px}
+.tajuk-hebahan .btn-primary{display:inline-block}
+
+.latest-atas{margin:0 auto 0;border-radius:0;max-width:100%}
+.latest-ticker-wrap{flex:1;overflow:hidden;position:relative;height:44px}
+.latest-ticker-run{display:flex;align-items:center;gap:44px;height:44px;white-space:nowrap;color:var(--putih);font-size:.84rem;font-weight:500;padding-left:20px;animation:tickerJalan 34s linear infinite;will-change:transform}
+.latest-ticker-run span{position:relative;padding-left:20px}
+.latest-ticker-run span::before{content:'\\25C6';position:absolute;left:0;color:var(--emas);font-size:.6rem;top:.28em}
+.latest-bar:hover .latest-ticker-run{animation-play-state:paused}
+@keyframes tickerJalan{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.latest-ticker-run{animation:none}.ps-track{transition:none}}
+
+@media(max-width:768px){
+  .poster-slider{padding:20px 0 18px}
+  .ps-viewport{max-width:min(84vw,380px)}
+  .ps-nav{width:36px;height:36px;font-size:1.2rem}
+  .ps-prev{left:8px}.ps-next{right:8px}
+  .tajuk-hebahan{padding:26px 18px 24px}
+}
