@@ -1,0 +1,17 @@
+/*
+Theme Name: PMNI — Pondok Moden Nurul Isyraq
+Theme URI: https://pmni.my.id
+Author: Ishak Basri
+Author URI: https://github.com/ishak21
+Description: Tema rasmi Pondok Moden Nurul Isyraq. Reka bentuk hijau-emas dengan sokongan berita, muat turun dokumen, dan tabung infaq.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pmni
+Tags: education, islamic, green, custom-menu, featured-images
+*/
+
+/* Gaya utama dimuatkan dari assets/main.css melalui functions.php */
