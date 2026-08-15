@@ -340,3 +340,14 @@ footer{background:var(--hitam);color:rgba(255,255,255,.7);padding:56px 24px 0}
   .solat-grid{grid-template-columns:repeat(2,1fr)}
   .hero-content{padding:60px 20px 110px}
 }
+
+/* Tanda panah pada menu yang mempunyai submenu */
+.nav-menu .menu-item-has-children > a::before{
+  content:'\f078';font-family:'Font Awesome 6 Free';font-weight:900;
+  font-size:.5rem;opacity:.45;order:2;margin-left:5px;
+}
+.nav-menu .menu-item-has-children:hover > a::before{opacity:.85}
+@media(max-width:900px){
+  .nav-menu .menu-item-has-children > a::before{margin-left:auto;font-size:.7rem}
+  .nav-menu .menu-item-has-children.dropdown-open > a::before{transform:rotate(180deg)}
+}
